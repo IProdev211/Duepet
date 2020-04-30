@@ -1,0 +1,41 @@
+fastlane_version '2.140.0'
+
+before_all do
+  ensure_git_branch(
+      branch: 'push-notifications-setup'
+  )
+  ensure_git_status_clean
+  git_pull
+  ENV["MATCH_PASSWORD"] = "$unnyD@y"
+end
+
+platform :ios do
+   # iOS Lanes
+   desc 'Fetch certificates and provisioning profiles'
+    lane :certificates do
+    match(app_identifier: 'com.textmimedia.duepet', type: 'development', readonly: true)
+    match(app_identifier: 'com.textmimedia.duepet', type: 'adhoc', readonly: true)
+    end
+
+    # Firebase Distribution Setup
+    desc 'Deploy standalone IPA to Firebase'
+      lane :distribute do |options|
+          firebase_app_distribution(
+              app: "1:472579234253:ios:ba6a397d242990c4a90c84",
+              release_notes: "Add Release notes here!",
+                ipa_path: options[:ipa_path]  
+          )
+      end
+end
+
+platform :android do
+  # Android Lanes
+  desc 'Deploy standalone APK to Firebase'
+    lane :distribute do |options|
+        firebase_app_distribution(
+          app: "1:472579234253:android:fc882af1a77bf182a90c84",
+          release_notes: "Add Release notes here!",
+          apk_path: options[:apk_path]
+        )
+    end
+end

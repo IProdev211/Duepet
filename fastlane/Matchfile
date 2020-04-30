@@ -1,0 +1,15 @@
+git_url("https://iykazrji@bitbucket.org/textmimedialtd/fastline-certifications.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier(["com.textmimedia.duepet"])
+username("i.azorji@textmimedia.com") # Your Apple Developer Portal username
+
+ENV["MATCH_PASSWORD"] = "$unnyD@y" #Password for the .p12 files saved in git repo.
+
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options
+
+# The docs are available on https://docs.fastlane.tools/actions/match

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "472579234253",
+    "firebase_url": "https://duepet-e202f.firebaseio.com",
+    "project_id": "duepet-e202f",
+    "storage_bucket": "duepet-e202f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472579234253:android:fc882af1a77bf182a90c84",
+        "android_client_info": {
+          "package_name": "com.textmimedia.duepet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472579234253-sk2p8n4sauausbn2fqv0j2jd4k7hp5kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_QWATOrD9lCZO3TGYoJegToL3RdH4oYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472579234253-sk2p8n4sauausbn2fqv0j2jd4k7hp5kr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "472579234253-gugq8280a3cl8m37a5i3jg6buu5get53.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.textmimedia.duepet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
